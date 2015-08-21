@@ -1,0 +1,10 @@
+.data
+A: .byte 0xaa
+
+main:
+lw $t2,A #memory(00)=55
+lw $t3,A #memory(01)=AA
+add $t1,$t2,$t3
+sw $t1,A #memory(03)=FF
+#blt $t1,$t2,-4
+beq $t1,$t1,main

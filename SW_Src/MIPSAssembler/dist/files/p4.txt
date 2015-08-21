@@ -1,0 +1,11 @@
+main:
+LABEL:
+	add $t1,$zero,$t1
+	add $t2,$zero,$t2
+	add $t3,$zero,$t3
+	add $t4,$zero,$t4
+	add $t5,$zero,$t5
+	add $t6,$zero,$t6
+	add $t7,$zero,$t7
+	add $t8,$zero,$t8
+	add $t9,$zero,$t9

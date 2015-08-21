@@ -1,0 +1,18 @@
+-- Program file
+Depth = 256;
+Width = 32;
+Address_radix = DEC;
+Data_radix = BIN;
+Content
+Begin
+-- Use NOPS for default instruction memory values
+	[00..255]: 00000000000000000000000000000000; -- nop (sll r0,r0,0)
+-- Place MIPS Instructions here
+-- Note: memory addresses are in words and not bytes
+-- i.e. next location is +1 and not +4
+0 : 10001100000010010000000000000000;
+1 : 10001100000010110000000000000001;
+2 : 00000000000000000101000000100000;
+3 : 00000001001010100101000000100000;
+4 : 00010001010010111111111111111000;
+End;

@@ -1,0 +1,13 @@
+.data
+d1: .byte 0x0A
+d2: .byte 0x01
+
+main:
+lw $t1, d1
+lw $t2, d2
+Label1: 
+sub $t1, $t1, $t2
+blez $t1, Label2
+beq $zero, $zero, Label1
+Label2: 
+add $zero,$zero,$zero

@@ -1,0 +1,16 @@
+group mips;
+
+rformat(op, rlist, shamt, func) ::= <<
+<op><rlist; separator=""><shamt><func>
+>>
+
+rformat1(op, rlist, shamt, func) ::= <<
+<op><rlist; separator=""><shamt><func>
+>>
+
+iformat(op, rlist, imm) ::= <<
+<op><rlist; separator=""><imm>
+>>
+
+jformat() ::= <<
+>>

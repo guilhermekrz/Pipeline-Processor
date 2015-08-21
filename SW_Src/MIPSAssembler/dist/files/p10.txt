@@ -1,0 +1,11 @@
+.data
+
+.text
+addi $t1, $zero, 10
+addi $t2, $zero, 1
+label1:
+sub $t1, $t1, $t2
+blez $t1, L2
+beq $zero, $zero, label1
+L2:
+add $zero,$zero,$zero

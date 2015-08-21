@@ -1,0 +1,14 @@
+-- MIPS Instruction Memory Initialization File
+Depth = 256;
+Width = 32;
+Address_radix = HEX;
+Data_radix = BIN;
+Content
+Begin
+	-- This is a simple loop that executes ten times.
+	[00..FF]: 00000000000000000000000000000000;
+	00 : 00100000000010010000000000001010; -- addi $t1, $zero, 10
+	01 : 00100000000010100000000000000001; -- addi $t2, $zero, 1
+	02 : 00000001010010010100100000100110; -- Label1: sub $t1, $t1, $t2
+	03 : 00010000000010011111111111111110; -- beq $zero, $t1, Label1
+End;

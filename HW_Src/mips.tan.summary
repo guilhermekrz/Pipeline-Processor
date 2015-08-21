@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 4.545 ns
+From           : reset
+To             : Idecode:ID|register_array[29][2]
+From Clock     : --
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 24.434 ns
+From           : Ifetch:IFE|altsyncram:inst_memory|altsyncram_mii3:auto_generated|ram_block1a4~porta_address_reg7
+To             : write_data_out[23]
+From Clock     : clock
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.195 ns
+From           : reset
+To             : Idecode:ID|register_array[31][18]
+From Clock     : --
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clock'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 32.00 MHz ( period = 31.246 ns )
+From           : Ifetch:IFE|altsyncram:inst_memory|altsyncram_mii3:auto_generated|ram_block1a4~porta_address_reg7
+To             : dmemory:MEM|altsyncram:data_memory|altsyncram_9mk3:auto_generated|ram_block1a0~porta_address_reg0
+From Clock     : clock
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

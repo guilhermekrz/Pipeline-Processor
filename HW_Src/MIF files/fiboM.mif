@@ -1,0 +1,11 @@
+
+-- Data file
+depth=256;
+width=32;
+Address_radix = DEC;
+Data_radix = BIN;
+Content
+Begin
+0 : 00000000000000000000000000000001;
+1 : 00000000000000000000000000000001;
+End;

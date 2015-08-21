@@ -1,0 +1,11 @@
+.data
+	mem: .word 0x0A
+	mem2: .word 0x0B
+
+.text
+	add $zero,$zero,$zero
+	add $t1,$t1,$t1
+	la $t2,mem
+	la $t3,mem2
+	lw $t2,0($t3)
+	lw $t2,mem2

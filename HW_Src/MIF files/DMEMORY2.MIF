@@ -1,0 +1,9 @@
+-- Data file
+Depth=256;
+Width=32;
+Address_radix = HEX;
+Data_radix = BIN;
+Content
+Begin
+ [00..FF] : 00000000000000000000000000000000;
+End;
